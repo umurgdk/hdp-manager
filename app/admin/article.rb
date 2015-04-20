@@ -12,7 +12,7 @@ ActiveAdmin.register Article do
       img_big = f.object.image.url(:ios2x)
 
       f.input :image, as: :file, hint: image_tag(img_thumbnail, admin_lightbox: img_big)
-      f.input :body
+      f.input :body, as: :wysihtml5
     end
 
     f.actions
