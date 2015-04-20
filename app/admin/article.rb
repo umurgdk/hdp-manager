@@ -27,7 +27,7 @@ ActiveAdmin.register Article do
 
     column :category
     column :title
-    column :body
+    column :summary
 
     actions
   end
