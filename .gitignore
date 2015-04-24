@@ -15,3 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+/public/system/**/*.jpg
+/public/system/**/*.png
+
+*.swp
+.idea
