@@ -1,5 +1,5 @@
 class ArticleSerializer < ActiveModel::Serializer
-  attributes :id, :title, :category, :body, :summary, :image_url
+  attributes :id, :title, :category, :body, :summary, :image_url, :created_at
 
   def image_url
     if scope == :ios

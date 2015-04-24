@@ -1,5 +1,5 @@
 class ElectionArticleSerializer < ActiveModel::Serializer
-  attributes :id, :title, :body, :media_type, :image_url, :video_url
+  attributes :id, :title, :body, :media_type, :image_url, :video_url, :created_at
 
   def image_url
     if scope == :ios
