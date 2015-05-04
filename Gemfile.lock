@@ -17,6 +17,13 @@ GIT
       sass-rails
 
 GIT
+  remote: git://github.com/radar/by_star
+  revision: 670451fbc66bbf1e149ac20173cbe0ecb95d4fba
+  specs:
+    by_star (2.2.1)
+      activesupport
+
+GIT
   remote: git://github.com/stefanoverna/activeadmin-dragonfly.git
   revision: 611164ff0255c66a3e555b5d46dd99f0eff1f115
   specs:
@@ -246,6 +253,7 @@ DEPENDENCIES
   activeadmin!
   activeadmin-dragonfly!
   activeadmin-wysihtml5!
+  by_star!
   byebug
   coffee-rails (~> 4.1.0)
   devise

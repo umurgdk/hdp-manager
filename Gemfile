@@ -14,6 +14,7 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 gem 'sqlite3'
 gem 'pg'
 gem 'yaml_db'
+gem 'by_star', :git => "git://github.com/radar/by_star"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

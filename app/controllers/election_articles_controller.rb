@@ -3,8 +3,9 @@ require 'date'
 class ElectionArticlesController < ApplicationController
   def index
     if params.key? :after
-      after_date = DateTime.strptime(params[:after], '%s')
-      @articles = ElectionArticle.where('datetime(created_at) > :date', date: after_date.to_s(:db))
+      after_date = DateTime.strptime((params[:after].to_i + 1).to_s, '%s')
+      # @articles = ElectionArticle.where('created_at > :date OR updated_at > :date', date: after_date)
+      @articles = ElectionArticle.after(after_date)
     else
       @articles = ElectionArticle.all
     end
