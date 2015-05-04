@@ -40,6 +40,7 @@ namespace :deploy do
   task :restart do
     on roles(:web) do
       execute("sh #{deploy_to}/setenv.sh")
+      execute :rake, 'assets:precompile'
       capture("#{deploy_to}/bin/restart")
     end
   end
